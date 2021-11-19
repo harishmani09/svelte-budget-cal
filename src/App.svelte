@@ -95,7 +95,7 @@ onMount( () => {
 });
 
 afterUpdate( () => {
-    console.log('after update');
+    setLocalStorage();
 })
 
 // function deleteExpense(event){
