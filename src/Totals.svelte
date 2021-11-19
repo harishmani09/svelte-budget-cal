@@ -7,7 +7,7 @@ export let total = 0;
 
 <section class="main-title">
 
-    <h2> {title}: ${total} </h2>
+    <h2> {title}: Rs{total} </h2>
 
 
 </section>
