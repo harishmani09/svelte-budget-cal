@@ -1,8 +1,8 @@
 <script>
 import {setContext, afterUpdate} from 'svelte';
 import {getContext} from 'svelte';
-import Github from './Github.svelte';
-import Githubawait from './Githubawait.svelte';
+// import Github from './Github.svelte';
+// import Githubawait from './Githubawait.svelte';
 
 //components
 import Navbar from './Navbar.svelte';
@@ -110,14 +110,14 @@ afterUpdate( () => {
 
 <main class="content">
 <!-- <Github /> -->
-<Githubawait />
-<!-- {#if isFormOpen}    
+<!-- <Githubawait /> -->
+{#if isFormOpen}    
 <Modal>
 <ExpenseForm {addExpense} name={setName} amount={setAmount} {isEditing} {editExpense} {hideForm}/>
 </Modal>
 {/if}
 <Totals title="total expenses" {total} />
-<ExpensesList {expenses} {removeExpense} /> -->
+<ExpensesList {expenses} {removeExpense} />
 
 </main>
 
